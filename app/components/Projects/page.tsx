@@ -1,6 +1,15 @@
 import Image from "next/image";
 import { MoveRight } from "lucide-react";
 
+interface Project {
+  title: string;
+  description: string;
+  stack: string;
+  image: string;
+  link: string;
+  inProgress?: boolean;
+}
+
 const projects = [
    {
     title: "Education Analytics Dashboard",
@@ -40,7 +49,7 @@ const projects = [
   }
 ];
 
-function ProjectCard({ project, index }) {
+function ProjectCard({ project, index }: { project: Project; index: number }) {
   return (
     <div
       className="relative top-24 flex flex-col items-center justify-between bg-slate-900 rounded-2xl p-4 mb-6 overflow-hidden"
