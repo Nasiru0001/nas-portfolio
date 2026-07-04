@@ -26,7 +26,7 @@ const iosevkaCharon = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Adamu Nasiru Zakari",
+  title: "Adamu-Nasiru Zakari",
   description: "Frontend and Web3 Developer",
 };
 
@@ -35,9 +35,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en">
-      <body className={`${iosevkaCharon.className} bg-slate-950 `}>
+      <body className={`${iosevkaCharon.className} bg-slate-950 w-full`}>
         {children}
       </body>
     </html>

@@ -19,6 +19,11 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* match your navbar height */
+}
+
 body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
@@ -164,4 +169,17 @@ body {
   position: absolute;
   left: 15px;
   bottom: 15px;
+}
+
+.animate-left{
+  animation: slideInLeft  linear 2s;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

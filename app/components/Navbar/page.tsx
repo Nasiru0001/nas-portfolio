@@ -1,47 +1,25 @@
-import { House } from "lucide-react";
-import { CircleUserRound } from "lucide-react";
-import { Grid2x2 } from "lucide-react";
-import { BookImage } from "lucide-react";
-import { Sun } from "lucide-react";
+"use client";
+import {navLink} from "@/app/constants/navLinks"
+import { useState } from "react"; 
 
 export default function Navbar() {
-  // const navItem = [
-  //   {id: 'Home', icon: House , label: ''}
-  // ]
+    const [active, setActive] = useState("House")
 
   return (
-    <nav className="fixed top-0  lg:max-w-1/3 md:max-w-1/2 w-[75%]">
-      {/* <div className="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-full w-full rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div> */}
-      {/* <div className="absolute bottom-0 right-[-20%] top-[-10%] h-full w-full rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div> */}
-
-      <div className="flex items-center justify-center mx-auto md:px-2 px-5 py-2 bg-black md:space-x-7 space-x-3  mt-5 rounded-full">
-        <span className="flex items-center gap-2 ">
-          <span className="bg-gray-400 rounded-full px-2 py-1 ">
-            <House className="md:w-4 w-3.5" />
-          </span>
-          |
-        </span>
-
-        <span className="flex items-center md:gap-2 gap-1 text-xs cursor-pointer">
-          <CircleUserRound className="md:w-4 w-3.5" />
-          <a href="#about">About</a>
-        </span>
-
-        <span className="flex items-center md:gap-2 gap-1 text-xs">
-          <Grid2x2 className="md:w-4 w-3.5" />
-          <a href="#about" className="md:block hidden">
-            Work
-          </a>
-        </span>
-
-        <span className="flex items-center md:gap-2 gap-1 text-xs">
-          <BookImage className="md:w-4 w-3.5" />
-          <span className="md:block hidden">Gallery</span>
-        </span>
-
-        <span className="flex items-center md:gap-2 gap-1 text-xs">
-          | <Sun className="md:w-4 w-3.5" />
-        </span>
+    <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[70%] md:w-auto overflow-x-auto">
+      <div className="flex items-center justify-center mx-auto md:px-7 px-5 py-4 bg-slate-900/60 backdrop-blur-md text-white md:space-x-7 space-x-3 mt-2 rounded-full">
+            {navLink.map(({label, name, href, icon: Icon})=>{
+                return (
+                  <div key={href}>
+                    <a href={href} onClick={() => setActive(label)} className="flex items-center md:gap-2 gap-1 text-xs cursor-pointer hover:text-red-300 ">
+                      <span className={`rounded-full px-2 py-1 ${active == label ? "bg-gray-400" : "bg-transparent" }` }>
+                      <Icon  className="md:w-4 w-3.5  " />
+                      </span>
+                        {name}  
+                     </a>
+                  </  div>
+                ) 
+})}
       </div>
       {/* Star Animation */}
     </nav>
