@@ -29,7 +29,7 @@ export default function Home() {
         />
       </div>
 
-      <span className="px-4 py-2  rounded-full bg-[#091928] border-[#1a3448] border mb-7 md:mt-0 mt-80">
+      <span className="px-4 py-2  rounded-full bg-[#091928] border-[#1a3448] border mb-7 md:mt-0 mt-80 text-white">
         Welcome to my world
       </span>
 
