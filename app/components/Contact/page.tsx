@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section className='w-full mb-20'>
     <div className='flex flex-col items-center justify-center md:mx-40'>
-        <p className="px-10 py-2 rounded-full text-center bg-[#091928] border-[#1a3448] border ">
+        <p className="px-10 py-2 rounded-full text-center bg-[#091928] border-[#1a3448] border text-white ">
           Available for Hire
         </p>
 

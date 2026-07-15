@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <section className='w-full'>
         <div className='border-t border-gray-400 mb-10 '>
-               <p className='text-center mt-5'>
+               <p className='text-center mt-5 text-white'>
                 @ 2026. Adamu Nasiru Zakari. Alrights Reserved
                 </p> 
 
