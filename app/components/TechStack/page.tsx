@@ -10,11 +10,11 @@ const TechStack = () => {
 
     <section className='w-full md:mb-20' id="stack">
     <div className="md:mx-40 rounded-2xl flex flex-col justify-center items-center py-20 ">
-         <p className="md:mx-20 mx-10 w-40 px-10 py-2 rounded-full text-center bg-[#091928] border-[#1a3448] border ">
+         <p className="md:mx-20 mx-10 w-40 px-10 py-2 rounded-full text-center bg-[#091928] border-[#1a3448] border text-white  ">
           Stack
         </p>
 
-        <h1 className=" md:mx-20 mx-10 mt-10 mb-5 md:text-6xl text-4xl font-extrabold underline">
+        <h1 className=" md:mx-20 mx-10 mt-10 mb-5 md:text-6xl text-4xl font-extrabold underline text-white">
           MY TECH STACK 
         </h1>
 
@@ -93,7 +93,7 @@ const TechStack = () => {
 
         </motion.div>
 
-        <h1 className="md:mx-20 mt-20 mb-5 text-3xl text-center font-extrabold">
+        <h1 className="md:mx-20 mt-20 mb-5 text-3xl text-center font-extrabold text-white">
           TOOLS & PLATFROMS
         </h1>
 

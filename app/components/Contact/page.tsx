@@ -8,7 +8,7 @@ const Contact = () => {
           Available for Hire
         </p>
 
-        <h3 className='font-extrabold md:text-7xl text-5xl text-center mt-10'> {"Let's"} Build <br /> The Future Together.</h3>
+        <h3 className='font-extrabold md:text-7xl text-5xl text-center mt-10 text-white'> {"Let's"} Build <br /> The Future Together.</h3>
 
         <p className='md:text-xl text-[17px] text-center md:mt-10 mt-5 md:leading-9 text-gray-400'>Have a project in mind or just want to chat about turning ideas into clean, <br className='md:block hidden' /> fast, and beautiful web experiences.
           <br className='md:block hidden' />

@@ -13,12 +13,12 @@ const About = () => {
         // viewport={{ once: true }}
         className="md:mx-20 rounded-2xl flex flex-col justify-center items-left py-20 ">
 
-        <p className="md:mx-20 mx-10 px-4 py-2 w-40 rounded-full text-center bg-[#091928] border-[#1a3448] border ">
+        <p className="md:mx-20 mx-10 px-4 py-2 w-40 rounded-full text-center bg-[#091928] border-[#1a3448] border text-white ">
           {" "}
           👋 Who am I
         </p>
 
-        <h1 className=" md:mx-20 mx-10 text-left mt-10 mb-5 md:text-6xl text-4xl font-extrabold underline">
+        <h1 className=" md:mx-20 mx-10 text-left mt-10 mb-5 md:text-6xl text-4xl font-extrabold underline text-white">
           ABOUT ME
         </h1>
 
